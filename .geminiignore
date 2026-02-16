@@ -1,0 +1,63 @@
+# --- System & Git ---
+.git/
+.gitignore
+.geminiignore
+.vs/
+.vscode/
+.idea/
+
+# --- Secrets (CRITICAL) ---
+.env
+.env.*
+*.pfx
+*.key
+appsettings.Development.json
+# Note: appsettings.json is usually safe, but check for secrets first
+
+# --- Huge Dependencies (Token Wasters) ---
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# --- .NET Build Artifacts ---
+bin/
+obj/
+debug/
+release/
+.net/
+artifacts/
+*.pdb
+*.dll
+*.exe
+
+# --- React Build Artifacts ---
+dist/
+build/
+coverage/
+.next/
+
+# --- Static Assets (Binary files confuse LLMs) ---
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.ico
+*.svg
+*.woff
+*.woff2
+*.ttf
+*.eot
+*.mp4
+*.webm
+
+# --- Database ---
+*.sqlite
+*.db
+*.mdf
+*.ldf
+
+# --- Logs & Temp ---
+*.log
+*.tmp
+*.bak

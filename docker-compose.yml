@@ -3,7 +3,7 @@ version: "3.8"
 services:
   db:
     container_name: postgres
-    image: postgres:latest
+    image: postgres:18.2
     restart: always
     ports:
       - "${DB_PORT}:5432"
@@ -18,7 +18,7 @@ services:
 
   pgadmin:
     container_name: pgadmin
-    image: dpage/pgadmin4:latest
+    image: dpage/pgadmin4:9.12.0
     restart: always
     environment:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
